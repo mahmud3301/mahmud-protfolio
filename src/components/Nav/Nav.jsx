@@ -48,17 +48,17 @@ const Nav = () => {
           activeClass=""
           onClick={() => setActive("#projects")}
           className={`tooltip${active === "#projects" ? "active" : ""}`}
-          data-tip="Projects">
+          data-tip="Portfolio">
           <SiPolymerproject />
         </ScrollLink>
         <ScrollLink
-          to="contract"
+          to="contact"
           smooth={true}
           duration={200}
           activeClass=""
-          onClick={() => setActive("#contract")}
-          className={`tooltip${active === "#contract" ? "active" : ""}`}
-          data-tip="Contract">
+          onClick={() => setActive("#contact")}
+          className={`tooltip${active === "#contact" ? "active" : ""}`}
+          data-tip="Contact">
           <BsTelephoneFill />
         </ScrollLink>
       </nav>

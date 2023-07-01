@@ -1,0 +1,64 @@
+[
+  {
+    "projectName": "Chiefs Hunter",
+    "image": ["../src/assets/cheifs_project.png"],
+    "live_link": "https://cheaf-a7238.web.app/",
+    "github_client": "https://github.com/mahmud3301/chiefs-hunter-client",
+    "github_server": "https://github.com/mahmud3301/chiefs-hunter-server",
+    "Introduction": {
+      "info": "This website has 4 pages:\n- Home\n- Blog\n- Login\n- Sign up\n\nThis Project is a Front-End Website Application\nThe home page of this website has:\n- A carousel banner\n- A chief\n- Dishes\n- A positions section\n- Header and footer"
+    },
+    "Technologies": {
+      "tech": ["React Js", "Bootstrap", "Firebase (Authentication)", "npm, etc"]
+    }
+  },
+  {
+    "projectName": "Avengers Toy Shop",
+    "image": ["../src/assets/avengers_project.png"],
+    "live_link": "https://avengers-5445a.firebaseapp.com/",
+    "github_client": "https://github.com/mahmud3301/avengers-client",
+    "github_server": "https://github.com/mahmud3301/avengers-server",
+    "Introduction": {
+      "info": "This project has 9 pages\nThis project is a Full-Stack website\nA user can:\n- Update\n- Delete\n- Add a toy\n\nThere is also a search option to find a toy"
+    },
+    "Technologies": {
+      "tech": [
+        "React Js",
+        "Tailwind CSS",
+        "DaisyUi",
+        "Firebase (Authentication)",
+        "npm",
+        "MongoDB",
+        "Cors",
+        "Express Js, etc"
+      ]
+    }
+  },
+  {
+    "projectName": "Melody",
+    "image": ["../src/assets/melody_project.png"],
+    "live_link": "https://summer-camp-5b63b.web.app/",
+    "github_client": "https://github.com/mahmud3301/summer-camp-learn-music-instrument-client",
+    "github_server": "https://github.com/mahmud3301/summer-camp-learn-music-instrument-server",
+    "Introduction": {
+      "info": "This project is added to 3 role dashboards:\n- Admin role\n- Instructor role\n- User role\n\nThe admin can change a user/student to an instructor or admin\nA student can add a class to their cart and buy it"
+    },
+    "Technologies": {
+      "tech": [
+        "React Js",
+        "Tailwind CSS",
+        "DaisyUi",
+        "Firebase (Authentication)",
+        "npm",
+        "MongoDB",
+        "Cors",
+        "Express",
+        "Stripe",
+        "React Query",
+        "JWT token",
+        "Axios",
+        "React Hook Form, etc"
+      ]
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Html",
+    "logo": "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png",
+    "percentage": "90"
+  },
+  {
+    "name": "CSS",
+    "logo": "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_640.png",
+    "percentage": "87"
+  },
+  {
+    "name": "Bootstrap",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png",
+    "percentage": "93"
+  },
+  {
+    "name": "Tailwind CSS",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
+    "percentage": "96"
+  },
+  {
+    "name": "JavaScript",
+    "logo": "https://www.freepnglogos.com/uploads/javascript/js-circle-black-design-logo-30.png",
+    "percentage": "80"
+  },
+  {
+    "name": "React",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png",
+    "percentage": "88"
+  },
+  {
+    "name": "Firebase",
+    "logo": "https://user-images.githubusercontent.com/94545831/196925526-b6f89f3e-0abb-4ea2-842b-371487196463.png",
+    "percentage": "94"
+  },
+  {
+    "name": "Node",
+    "logo": "https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png",
+    "percentage": "78"
+  },
+  {
+    "name": "Express",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Status_iucn_EX_icon.svg/480px-Status_iucn_EX_icon.svg.png",
+    "percentage": "87"
+  },
+  {
+    "name": "MongoDB",
+    "logo": "https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png",
+    "percentage": "89"
+  },
+  {
+    "name": "Git & GitHub",
+    "logo": "https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png",
+    "percentage": "93"
+  },
+  {
+    "name": "Netlify",
+    "logo": "https://iconape.com/wp-content/png_logo_vector/netlify-logo.png",
+    "percentage": "95"
+  }
+]

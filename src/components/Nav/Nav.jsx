@@ -44,21 +44,21 @@ const Nav = () => {
         <ScrollLink
           to="portfolio"
           smooth={true}
-          duration={450}
+          duration={400}
           activeClass=""
           onClick={() => setActive("#portfolio")}
-          className={`tooltip cursor-pointer${active === "#portfolio" ? "active" : ""}`}
-          data-tip="Portfolio">
+          className={`tooltip cursor-pointer ${active === "#portfolio" ? "active" : ""}`}
+          data-tip="portfolio">
           <SiPolymerproject />
         </ScrollLink>
         <ScrollLink
           to="contact"
           smooth={true}
-          duration={500}
+          duration={400}
           activeClass=""
           onClick={() => setActive("#contact")}
-          className={`tooltip cursor-pointer${active === "#contact" ? "active" : ""}`}
-          data-tip="Contact">
+          className={`tooltip cursor-pointer ${active === "#contact" ? "active" : ""}`}
+          data-tip="contact">
           <BsTelephoneFill />
         </ScrollLink>
       </nav>

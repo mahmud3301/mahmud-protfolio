@@ -27,7 +27,7 @@ const Projects = () => {
         </h1>
         <div
           style={{
-            background: "linear-gradient(to right, #DC2626, #5B21B6, #9333EA)",
+            background: "linear-gradient(to right, #DC3636, #5B33B6, #9555EA)",
           }}
           data-aos="fade-up"
           data-aos-delay="1000"
@@ -51,9 +51,8 @@ const Projects = () => {
                         {project.projectName}
                       </h2>
                       <div className="flex items-center justify-center">
-                        <p className="text-white text-lg md:text-2xl font-bold mr-4 md:mr-8 tooltip" data-tip="Live Site">
+                        <p className="text-white text-lg md:text-2xl font-bold mr-4 md:mr-8 tooltip cursor-pointer hover:scale-[1.3] transition" data-tip="Live Site">
                           <a
-                            className="cursor-pointer"
                             target="_blank"
                             rel="noopener noreferrer"
                             href={project.live_link}
@@ -62,7 +61,7 @@ const Projects = () => {
                           </a>
                         </p>
                         <p
-                          className="text-white cursor-pointer text-lg md:text-2xl font-bold tooltip"
+                          className="text-white cursor-pointer hover:scale-[1.3] transition text-lg md:text-2xl font-bold tooltip"
                           data-tip="View"
                           onClick={() => openModal(project)}
                         >

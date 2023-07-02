@@ -5,7 +5,10 @@ import header from "../assets/header-img.svg";
 import { Link as ScrollLink } from "react-scroll";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
-import {FaArrowRight} from "react-icons/fa"
+import { FaArrowRight } from "react-icons/fa";
+
+const PDF_FILE_URL =
+  "http://localhost:5173/Mahmudul_Hasan_Web developer_resume.pdf";
 
 const Banner = () => {
   const [text] = useTypewriter({
@@ -30,6 +33,21 @@ const Banner = () => {
     to: { transform: inView ? "translateY(0)" : "translateY(50px)" },
     config: { tension: 0, friction: 0 }
   });
+
+  const downloadFileAtURL = (url) => {
+    fetch(url)
+      .then((res) => res.blob())
+      .then((blob) => {
+        const blobURL = window.URL.createObjectURL(new Blob([blob]));
+        const fileName = url.split("/").pop();
+        const aTag = document.createElement("a");
+        aTag.href = blobURL;
+        aTag.setAttribute("download", fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+      });
+  };
 
   return (
     <div id="home">
@@ -61,18 +79,19 @@ const Banner = () => {
                 together.
               </p>
               <div className="flex gap-5 mt-8">
-                <a
-                  href="https://drive.google.com/file/d/1hjRt1xAV8oeLZb4UHfiedJfImYY5kV0n/view"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download="Mahmudul Hasan | Web Developer Resume">
-                  <button className="p-3 cursor-pointer font-semibold border-2 rounded-xl hover:scale-[1.2] transition ">
-                    Download resume
-                  </button>
-                </a>
-                <ScrollLink className="group" to="contact" smooth={true} duration={500}>
+                <button
+                  onClick={() => downloadFileAtURL(PDF_FILE_URL)}
+                  className="p-3 cursor-pointer font-semibold border-2 rounded-xl hover:scale-[1.2] transition ">
+                  Download resume
+                </button>
+                <ScrollLink
+                  className="group"
+                  to="contact"
+                  smooth={true}
+                  duration={500}>
                   <button className="flex p-3 cursor-pointer font-semibold border-2 rounded-full hover:scale-[1.2] transition">
-                    Let's Connect  <FaArrowRight className="ml-2 mt-1 transform translate-x-0 group-hover:translate-x-1"/>
+                    Let's Connect{" "}
+                    <FaArrowRight className="ml-2 mt-1 transform translate-x-0 group-hover:translate-x-1" />
                   </button>
                 </ScrollLink>
               </div>

@@ -40,13 +40,13 @@ const Contract = () => {
           <div className="ml-5 md:ml-0">
             <h1
               data-aos="fade-up"
-              data-aos-delay="800"
+              data-aos-delay="500"
               className="text-5xl text-transparent mb-9 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-extrabold">
               Contact With Me
             </h1>
             <img
               data-aos="zoom-in"
-              data-aos-delay="1000"
+              data-aos-delay="800"
               className="w-72 h-72 lg:w-96 lg:h-96"
               src={contractGif}
               alt=""
@@ -54,7 +54,7 @@ const Contract = () => {
           </div>
           <div
             data-aos="fade-down"
-            data-aos-delay="1500"
+            data-aos-delay="1000"
             className="card mb-80 ml-5 md:ml-0 md:mb-0 w-80 lg:w-96 h-[60%] md:h-full shadow-2xl bg-gradient-to-r from-pink-900 via-indigo-800 to-purple-800">
             <form ref={form} onSubmit={sendEmail}>
               <div className="card-body">
@@ -63,6 +63,7 @@ const Contract = () => {
                     <span className="label-text">Name</span>
                   </label>
                   <input
+                    required
                     type="text"
                     name="from_name"
                     placeholder="Name"
@@ -74,6 +75,7 @@ const Contract = () => {
                     <span className="label-text">Email</span>
                   </label>
                   <input
+                    required
                     type="email"
                     name="email_id"
                     placeholder="Email"
@@ -85,6 +87,7 @@ const Contract = () => {
                     <span className="label-text">Message</span>
                   </label>
                   <textarea
+                    required
                     name="message"
                     type="text"
                     placeholder="Message"

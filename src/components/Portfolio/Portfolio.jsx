@@ -30,7 +30,7 @@ const Projects = () => {
             background: "linear-gradient(to right, #DC3636, #5B33B6, #9555EA)",
           }}
           data-aos="fade-up"
-          data-aos-delay="1000"
+          data-aos-delay="500"
           className="py-12 md:py-16 rounded-full"
           id="projects"
         >
@@ -41,7 +41,7 @@ const Projects = () => {
                   <div key={index} className="relative group">
                     <img
                       data-aos="fade-down"
-                      data-aos-delay="1500"
+                      data-aos-delay="800"
                       src={project.image}
                       alt=""
                       className="w-full h-auto rounded-2xl"

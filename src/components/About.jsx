@@ -1,7 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 import aboutImg from "../assets/about.png";
 
+const PDF_FILE_URL =
+  "http://localhost:5173/Mahmudul_Hasan_Web developer_resume.pdf";
 const About = () => {
+  const downloadFileAtURL = (url) => {
+    fetch(url)
+      .then((res) => res.blob())
+      .then((blob) => {
+        const blobURL = window.URL.createObjectURL(new Blob([blob]));
+        const fileName = url.split("/").pop();
+        const aTag = document.createElement("a");
+        aTag.href = blobURL;
+        aTag.setAttribute("download", fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+      });
+  };
   return (
     <div id="about" className="mt-28">
       <div className="grid grid-cols-1 md:grid-cols-2 mt-8">
@@ -11,10 +27,10 @@ const About = () => {
             data-aos-delay="1000"
             src={aboutImg}
             alt="About Img"
-            className="w-3/4 md:3/4 lg:2/4 ml-[16%] md:ml-[25%] lg:[18%] mb-0 lg:mb-80 mt-24 md:mt-96 lg:mt-0"
+            className="w-3/4 md:3/4 lg:2/4 ml-[16%] md:ml-[25%] lg:[18%] mb-0 lg:mb-5 mt-24 md:mt-96 lg:mt-0"
           />
         </div>
-        <div className="mt-12">
+        <div>
           <h1
             data-aos="fade-down"
             className="text-4xl text-center md:text-left font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -38,16 +54,12 @@ const About = () => {
               be part of your team to create exceptional web experiences
               together.
             </p>
-            <a
+            <button
               data-aos="zoom-in"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1hjRt1xAV8oeLZb4UHfiedJfImYY5kV0n/view"
-              download="Mahmudul Hasan | Web Developer Resume">
-              <button className="p-3 mt-8 ml-8 md:ml-0 cursor-pointer font-semibold bg-gradient-to-r from-pink-700 to-indigo-600 rounded-md hover:scale-[1.2] transition">
-                My resume
-              </button>
-            </a>
+              onClick={() => downloadFileAtURL(PDF_FILE_URL)}
+              className="p-3 mt-8 ml-8 md:ml-0 cursor-pointer font-semibold bg-gradient-to-r from-pink-700 to-indigo-600 rounded-md hover:scale-[1.2] transition">
+              My resume
+            </button>
           </div>
         </div>
       </div>

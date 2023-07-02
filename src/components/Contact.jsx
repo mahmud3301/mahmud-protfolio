@@ -36,11 +36,26 @@ const Contract = () => {
   return (
     <div id="contact">
       <div className="hero min-h-screen mt-10">
-        <div className="hero-content gap-60 flex-col lg:flex-row-reverse">
+        <div className="mx-0 md:mx-24 hero-content gap-48 grid grid-cols-1 md:grid-cols-2">
+          <div className="ml-5 md:ml-0">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="800"
+              className="text-5xl text-transparent mb-9 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-extrabold">
+              Contact With Me
+            </h1>
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="1000"
+              className="w-72 h-72 lg:w-96 lg:h-96"
+              src={contractGif}
+              alt=""
+            />
+          </div>
           <div
-            data-aos="fade-left"
+            data-aos="fade-down"
             data-aos-delay="1500"
-            className="card flex-shrink-0 w-96 h-full shadow-2xl  bg-gradient-to-r from-pink-900 via-indigo-800 to-purple-800">
+            className="card mb-80 ml-5 md:ml-0 md:mb-0 w-80 lg:w-96 h-[60%] md:h-full shadow-2xl bg-gradient-to-r from-pink-900 via-indigo-800 to-purple-800">
             <form ref={form} onSubmit={sendEmail}>
               <div className="card-body">
                 <div className="form-control">
@@ -85,24 +100,13 @@ const Contract = () => {
               </div>
             </form>
           </div>
-          <div>
-            <h1
-              data-aos="fade-right"
-              data-aos-delay="800"
-              className="text-5xl text-transparent mb-9 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-extrabold">
-              Contact With Me
-            </h1>
-            <img
-              data-aos="zoom-in"
-              data-aos-delay="1000"
-              className="w-96 h-96"
-              src={contractGif}
-              alt=""
-            />
-          </div>
         </div>
       </div>
-      <Toaster ba position="top-center" reverseOrder={false} />{" "}
+      <Toaster
+        className="bg-[#0a0a0a]"
+        position="top-center"
+        reverseOrder={false}
+      />{" "}
     </div>
   );
 };

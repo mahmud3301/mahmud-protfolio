@@ -1,5 +1,3 @@
-import nextJsPng from "../assets/nextjs.png"
-
 const Skills = () => {
   return (
     <div id="skills">
@@ -8,7 +6,7 @@ const Skills = () => {
         className="text-4xl text-center mt-24 mb-14 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
         Skills
       </h1>
-      <div className="grid grid-cols-2 md:grid-cols-5 mx-auto mr-12 md:mx-[9%]">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 mx-auto mr-12 md:mx-[0%] lg:mx-[9%]">
         <div data-aos="fade-right" className="relative">
           <img
             src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png"
@@ -341,32 +339,6 @@ const Skills = () => {
                 </h1>
                 <p className="text-2xl mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                   72%
-                </p>
-              </div>
-            </p>
-          </div>
-        </div>
-        <div data-aos="fade-right" data-aos-delay="600" className="relative">
-          <img
-            src={nextJsPng}
-            className="mt-5 rounded p-4"
-          />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 bg-black rounded-3xl">
-            <p className="text-white text-lg font-bold">
-              <div
-                data-aos="fade-right"
-                data-aos-delay="600"
-                className="radial-progress mr-12 text-purple-500"
-                style={{
-                  "--value": "84",
-                  "--size": "12rem",
-                  "--thickness": "5px"
-                }}>
-                <h1 className="text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                  Next JS
-                </h1>
-                <p className="text-2xl mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                  84%
                 </p>
               </div>
             </p>

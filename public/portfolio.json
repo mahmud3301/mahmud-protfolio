@@ -1,7 +1,7 @@
 [
   {
     "projectName": "Chiefs Hunter",
-    "image": ["../src/assets/cheifs_project.png"],
+    "image": "https://i.ibb.co/x3GsqH2/cheifs-project.png",
     "live_link": "https://cheaf-a7238.web.app/",
     "github_client": "https://github.com/mahmud3301/chiefs-hunter-client",
     "github_server": "https://github.com/mahmud3301/chiefs-hunter-server",
@@ -14,7 +14,7 @@
   },
   {
     "projectName": "Avengers Toy Shop",
-    "image": ["../src/assets/avengers_project.png"],
+    "image": "https://i.ibb.co/V23Q5cP/avengers-project.png",
     "live_link": "https://avengers-5445a.firebaseapp.com/",
     "github_client": "https://github.com/mahmud3301/avengers-client",
     "github_server": "https://github.com/mahmud3301/avengers-server",
@@ -36,7 +36,7 @@
   },
   {
     "projectName": "Melody",
-    "image": ["../src/assets/melody_project.png"],
+    "image": "https://i.ibb.co/p4QXWKr/melody-project.png",
     "live_link": "https://summer-camp-5b63b.web.app/",
     "github_client": "https://github.com/mahmud3301/summer-camp-learn-music-instrument-client",
     "github_server": "https://github.com/mahmud3301/summer-camp-learn-music-instrument-server",

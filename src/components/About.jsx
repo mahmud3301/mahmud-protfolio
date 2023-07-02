@@ -11,7 +11,7 @@ const About = () => {
             data-aos-delay="1000"
             src={aboutImg}
             alt="About Img"
-            className="w-2/4 mt-24 ml-[25%] md:ml-[30%] animate-pulse"
+            className="w-3/4 md:3/4 lg:2/4 ml-[16%] md:ml-[25%] lg:[18%] mb-0 lg:mb-80 mt-24 md:mt-96 lg:mt-0"
           />
         </div>
         <div className="mt-12">

@@ -2,12 +2,20 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import banner from "../assets/banner-bg.png";
 import header from "../assets/header-img.svg";
+import { Link as ScrollLink } from "react-scroll";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
+import {FaArrowRight} from "react-icons/fa"
 
 const Banner = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer","Mern Stack Developer", "Content Creator", "Youtuber", "Editor"],
+    words: [
+      "Web Developer",
+      "Mern Stack Developer",
+      "Content Creator",
+      "Youtuber",
+      "Editor"
+    ],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 80
@@ -29,7 +37,7 @@ const Banner = () => {
         className="hero min-h-screen"
         style={{ backgroundImage: `url(${banner})` }}>
         <div className="hero-content mt-32">
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="mb-24 md:mb-56 lg:mb-0 mx-3 md:mx-24 lg:mx-0 grid grid-cols-1 md:grid-cols-2">
             <div data-aos="fade-right" data-aos-delay="1000">
               <div className="p-2 border-2 mb-4 mr-[49%] bg-gradient-to-r from-pink-900 via-indigo-800 to-purple-800">
                 <h1 className="text-2xl font-bold">Welcome to my Portfolio</h1>
@@ -52,13 +60,29 @@ const Banner = () => {
                 on this exciting journey to shape a better digital landscape
                 together.
               </p>
+              <div className="flex gap-5 mt-8">
+                <a
+                  href="https://drive.google.com/file/d/1hjRt1xAV8oeLZb4UHfiedJfImYY5kV0n/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Mahmudul Hasan | Web Developer Resume">
+                  <button className="p-3 cursor-pointer font-semibold border-2 rounded-xl hover:scale-[1.2] transition ">
+                    Download resume
+                  </button>
+                </a>
+                <ScrollLink className="group" to="contact" smooth={true} duration={500}>
+                  <button className="flex p-3 cursor-pointer font-semibold border-2 rounded-full hover:scale-[1.2] transition">
+                    Let's Connect  <FaArrowRight className="ml-2 mt-1 transform translate-x-0 group-hover:translate-x-1"/>
+                  </button>
+                </ScrollLink>
+              </div>
             </div>
-            <div data-aos="fade-left">
+            <div data-aos="fade-up">
               <div ref={ref}>
                 <animated.img
                   src={header}
                   alt="Header Img"
-                  className="w-3/4 mt-24 md:mt-8 ml-12 md:ml-[30%] animate-bounce"
+                  className="w-3/4 mt-48 md:mt-56 lg:mt-0 ml-12 md:ml-[30%] animate-bounce"
                   style={springProps}
                 />
               </div>

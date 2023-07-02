@@ -14,50 +14,50 @@ const Nav = () => {
         <ScrollLink
           to="home"
           smooth={true}
-          duration={200}
+          duration={300}
           activeClass=""
           onClick={() => setActive("#home")}
-          className={`tooltip ${active === "#home" ? "active" : ""}`}
+          className={`tooltip cursor-pointer ${active === "#home" ? "active" : ""}`}
           data-tip="Home">
           <AiFillHome />
         </ScrollLink>
         <ScrollLink
           to="about"
           smooth={true}
-          duration={200}
+          duration={350}
           activeClass=""
           onClick={() => setActive("#about")}
-          className={`tooltip ${active === "#about" ? "active" : ""}`}
+          className={`tooltip cursor-pointer ${active === "#about" ? "active" : ""}`}
           data-tip="About">
           <BiSolidUser />
         </ScrollLink>
         <ScrollLink
           to="skills"
           smooth={true}
-          duration={200}
+          duration={400}
           activeClass=""
           onClick={() => setActive("#skills")}
-          className={`tooltip ${active === "#skills" ? "active" : ""}`}
+          className={`tooltip cursor-pointer ${active === "#skills" ? "active" : ""}`}
           data-tip="Skills">
           <BsBookFill />
         </ScrollLink>
         <ScrollLink
-          to="projects"
+          to="portfolio"
           smooth={true}
-          duration={200}
+          duration={450}
           activeClass=""
-          onClick={() => setActive("#projects")}
-          className={`tooltip${active === "#projects" ? "active" : ""}`}
+          onClick={() => setActive("#portfolio")}
+          className={`tooltip cursor-pointer${active === "#portfolio" ? "active" : ""}`}
           data-tip="Portfolio">
           <SiPolymerproject />
         </ScrollLink>
         <ScrollLink
           to="contact"
           smooth={true}
-          duration={200}
+          duration={500}
           activeClass=""
           onClick={() => setActive("#contact")}
-          className={`tooltip${active === "#contact" ? "active" : ""}`}
+          className={`tooltip cursor-pointer${active === "#contact" ? "active" : ""}`}
           data-tip="Contact">
           <BsTelephoneFill />
         </ScrollLink>

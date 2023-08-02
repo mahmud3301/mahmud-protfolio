@@ -2,7 +2,7 @@
 import aboutImg from "../assets/about.png";
 
 const PDF_FILE_URL =
-  "http://localhost:5173/Mahmudul_Hasan_Web developer_resume.pdf";
+  "https://mahmudulhasandev.netlify.app/Mahmudul_Hasan_Web developer_resume.pdf";
 const About = () => {
   const downloadFileAtURL = (url) => {
     fetch(url)
@@ -27,19 +27,19 @@ const About = () => {
             data-aos-delay="1000"
             src={aboutImg}
             alt="About Img"
-            className="w-3/4 md:3/4 lg:2/4 ml-[16%] md:ml-[25%] lg:[18%] mb-0 lg:mb-5 mt-24 md:mt-96 lg:mt-0"
+            className="w-3/4 md:3/4 lg:2/4 ml-[16%] md:ml-[25%] lg:[18%] mb-0 lg:mb-7 mt-24 md:mt-96 lg:mt-0"
           />
         </div>
         <div>
           <h1
             data-aos="fade-down"
-            className="text-4xl text-center md:text-left font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            className="mt-16 text-4xl text-center md:text-left font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
             About Me
           </h1>
           <div>
             <p
               data-aos="zoom-in"
-              className="text-2xl text-left font-medium mt-6 mr-8 ml-8 md:ml-0 md:mr-56">
+              className="text-left font-medium mt-6 mr-8 ml-8 md:ml-0 md:mr-56">
               I'm Mahmudul Hasan Mahi, a passionate MERN stack web developer
               from Jashore, Bangladesh. With expertise in HTML, CSS, JavaScript,
               React.js, and Node.js, I specialize in developing dynamic and

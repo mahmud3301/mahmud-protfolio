@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 import { FaArrowRight } from "react-icons/fa";
 
 const PDF_FILE_URL =
-  "http://localhost:5173/Mahmudul_Hasan_Web developer_resume.pdf";
+  "https://mahmudulhasandev.netlify.app/Mahmudul_Hasan_Web developer_resume.pdf";
 
 const Banner = () => {
   const [text] = useTypewriter({
@@ -53,7 +53,8 @@ const Banner = () => {
     <div id="home">
       <div
         className="hero min-h-screen"
-        style={{ backgroundImage: `url(${banner})` }}>
+        style={{ backgroundImage: `url(${banner})` }}
+        >
         <div className="hero-content mt-32">
           <div className="mb-24 md:mb-56 lg:mb-0 mx-3 md:mx-24 lg:mx-0 grid grid-cols-1 md:grid-cols-2">
             <div data-aos="fade-right" data-aos-delay="1000">
